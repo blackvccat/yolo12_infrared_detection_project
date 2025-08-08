@@ -1,0 +1,14 @@
+Index: ultralytics/jiance.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ultralytics/jiance.py b/ultralytics/jiance.py
+new file mode 100644
+--- /dev/null	(date 1745056233518)
++++ b/ultralytics/jiance.py	(date 1745056233518)
+@@ -0,0 +1,4 @@
++import torch
++model_path = r"C:\Users\blackvccat\PycharmProjects\PythonProject\ultralytics\runs\detect\neko_model6\weights\last.pt"
++ckpt = torch.load(model_path, map_location='cpu')
++print("模型加载成功")
